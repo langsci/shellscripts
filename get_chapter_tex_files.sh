@@ -1,4 +1,7 @@
-for i in {150..350}; do
+#!/bin/bash
+
+mkdir -p store
+for i in {16..350}; do
     echo -n 0 > flag
     echo "retrieving $i"
     if [ -d "store/$i" ]; then
